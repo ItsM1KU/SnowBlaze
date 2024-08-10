@@ -18,18 +18,18 @@ public class PlayerMovement : MonoBehaviour
         Movedirection.x = Input.GetAxisRaw("Horizontal");
         Movedirection.y = Input.GetAxisRaw("Vertical");
 
-        
+        anim.SetFloat("Speed", Movedirection.sqrMagnitude);
+
+        if (Movedirection != Vector2.zero)
+        {
+            anim.SetFloat("Horizontal", Movedirection.x);
+            anim.SetFloat("Vertical", Movedirection.y);    
+        }
     }
 
     private void FixedUpdate()
-    {
-        if (isMoving(rb.position))
-        {
-            anim.SetFloat("Horizontal", Movedirection.x);
-            anim.SetFloat("Vertical", Movedirection.y);
-            anim.SetFloat("Speed", Movedirection.sqrMagnitude);
-            move();
-        }
+    { 
+        move();   
     }
 
     private void move()
@@ -37,17 +37,4 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + Movedirection * moveSpeed * Time.fixedDeltaTime);
     }
 
-    private bool isMoving(Vector2 targetpos)
-    {
-
-        if(Physics2D.OverlapCircle(targetpos, 0.2f, InteractableLayer) != null)
-        {
-            return false;
-        }
-        else
-        {
-            return true;
-        }
-
-    }
 }

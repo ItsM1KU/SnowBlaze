@@ -25,6 +25,14 @@ public class PlayerMovement : MonoBehaviour
             anim.SetFloat("Horizontal", Movedirection.x);
             anim.SetFloat("Vertical", Movedirection.y);    
         }
+
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            if(Physics2D.OverlapCircle(rb.position, 0.5f, InteractableLayer))
+            {
+                Debug.Log("Interacting with NPC!!");
+            }
+        }
     }
 
     private void FixedUpdate()

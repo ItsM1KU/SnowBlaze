@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -28,10 +29,16 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.E))
         {
-            if(Physics2D.OverlapCircle(rb.position, 0.5f, InteractableLayer))
-            {
-                Debug.Log("Interacting with NPC!!");
-            }
+            interact();
+        }
+    }
+
+    void interact()
+    {
+        var collider = Physics2D.OverlapCircle(rb.position, 0.5f, InteractableLayer);
+        if(collider != null)
+        {
+            collider.GetComponent<Interactable>()?.interact();
         }
     }
 

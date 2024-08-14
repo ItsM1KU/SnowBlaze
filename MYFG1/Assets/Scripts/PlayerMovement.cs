@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] LayerMask InteractableLayer;
 
 
-    void Update()
+    public void HandleUpdate()
     {
         Movedirection.x = Input.GetAxisRaw("Horizontal");
         Movedirection.y = Input.GetAxisRaw("Vertical");

@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class GuideController : MonoBehaviour, Interactable
 {
+    [SerializeField] DialogScript dialog;
     public void interact()
     {
-        Debug.Log("I am here to guide you!!");
+        DialogManager.Instance.showdialog(dialog);
     }
 }

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff72901433c234841b3a0669c7bb7e2a, type: 3}
+  m_Name: MiniBoss2
+  m_EditorClassIdentifier: 
+  mobName: Bram The Wizard
+  mobDescription: He is a well know among the Angels as he has been by the side of
+    the Presumed King and is a cunning wizard who manipulates the people to join
+    the cult.
+  mobSprite: {fileID: 1648520563, guid: fe1417d60a2a8c5479763201be9a5a9f, type: 3}
+  health: 100
+  canHeal: 1
+  healAmount: 20
+  moves:
+  - {fileID: 11400000, guid: 9cf387c8f5945b547a9e2f7636a41ffd, type: 2}
+  - {fileID: 11400000, guid: 50856a33d4706db4694c0964514e976d, type: 2}
+  - {fileID: 11400000, guid: b0dfbd7d680414749a86fd672dcd9ab5, type: 2}
+  isBoss: 1

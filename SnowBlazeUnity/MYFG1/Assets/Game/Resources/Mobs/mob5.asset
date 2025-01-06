@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff72901433c234841b3a0669c7bb7e2a, type: 3}
+  m_Name: mob5
+  m_EditorClassIdentifier: 
+  mobName: Skeleton
+  mobDescription: 'Classic Monster in all RPGs that actually came to life in this
+    world. How ironic!!
+
+    You probably have an idea about this monster'
+  mobSprite: {fileID: -844334777, guid: c7383172baae8804fa78785a68e4e2ff, type: 3}
+  health: 50
+  moves:
+  - {fileID: 11400000, guid: 320330f007762d3488462396cd43e1be, type: 2}
+  - {fileID: 11400000, guid: a801b7e9c8563e94783420ec4a9b431e, type: 2}

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff72901433c234841b3a0669c7bb7e2a, type: 3}
+  m_Name: FinalBoss
+  m_EditorClassIdentifier: 
+  mobName: Damon The Angel
+  mobDescription: The leader of this mad Cult and the person who is about to start
+    a great war. He has proclaimed that he is the rightful king and has been backstabbed
+    by the royal guards. He is here for revenge.
+  mobSprite: {fileID: -572982689, guid: a3efc2f5836fead4384ff1f4da618171, type: 3}
+  health: 200
+  canHeal: 1
+  healAmount: 30
+  moves:
+  - {fileID: 11400000, guid: 4048de84de8617e4bbe40d7611903c0d, type: 2}
+  - {fileID: 11400000, guid: 810a30cbc821d0d4e90f29f1eb32418a, type: 2}
+  - {fileID: 11400000, guid: b2102008dc92359448a3e6fee9a014d5, type: 2}
+  - {fileID: 11400000, guid: ee44f8d2f0d5ddb48b88d12bf8ac5ef5, type: 2}
+  isBoss: 1

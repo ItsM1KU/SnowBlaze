@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff72901433c234841b3a0669c7bb7e2a, type: 3}
+  m_Name: MiniBoss1
+  m_EditorClassIdentifier: 
+  mobName: Crispy The Archer
+  mobDescription: This person was once a well known Archer who was accused of treason.
+    Since then she joined The Angels cult and has rose up the ranks pretty early
+    and is co-second in command of the Cult.
+  mobSprite: {fileID: 2025938748, guid: 2ec16a20f5f862b4bb8f2757c6b212a5, type: 3}
+  health: 100
+  canHeal: 1
+  healAmount: 20
+  moves:
+  - {fileID: 11400000, guid: a600e190a40fab14abb0bb2eccd33027, type: 2}
+  - {fileID: 11400000, guid: c95c0e4af71fa2f4fbff814b48d7d447, type: 2}
+  - {fileID: 11400000, guid: 92d65672ae6a80d4cafa9d1ca10ef8b4, type: 2}
+  isBoss: 1
